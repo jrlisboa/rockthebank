@@ -148,14 +148,14 @@
       <div class="">
         <span class="contato-tit">CONTATO<br><br></span>
         <div class="contato-form">
-          <form>
+          <form action="mail_send.php" method="post">
           <label>Nome</label><br>
-          <input type="text" name="nome"><br><br>
+          <input required type="text" name="nome"><br><br>
           <label>Email</label><br>
-          <input type="text" name="email"><br><br>
+          <input required type="text" name="email"><br><br>
           <label>Mensagem</label><br>
-          <textarea></textarea>
-          <button class="azul enviar">Enviar</button>
+          <textarea required name="mensagem"></textarea>
+          <button type="submit" name="BTEnvia" class="azul enviar">Enviar</button>
         </form>
         </div>
       </div>
